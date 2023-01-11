@@ -1,0 +1,30 @@
+﻿@model KanjiJisho.Models.Kanji
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Kanji</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.KanjiWord)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.KanjiWord)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Definition)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Definition)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
