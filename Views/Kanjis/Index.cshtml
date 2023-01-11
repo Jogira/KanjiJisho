@@ -15,9 +15,9 @@
             <th>
                 @Html.DisplayNameFor(model => model.KanjiWord)
             </th>
-            <th>
+@*            <th>
                 @Html.DisplayNameFor(model => model.Definition)
-            </th>
+            </th>*@
             <th></th>
         </tr>
     </thead>
@@ -27,9 +27,9 @@
             <td>
                 @Html.DisplayFor(modelItem => item.KanjiWord)
             </td>
-            <td>
+@*            <td>
                 @Html.DisplayFor(modelItem => item.Definition)
-            </td>
+            </td>*@
             <td>
                 <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
                 <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
